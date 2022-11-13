@@ -1,0 +1,21 @@
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0 65px 0;
+}
+
+.titleImage{
+    width: 2%;
+    height: 2%;
+}
+
+.welcomeMessage{
+    margin: 0 10px;
+}
+
+.puppiesContainer{
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+}

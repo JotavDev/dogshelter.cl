@@ -1,36 +1,25 @@
-header{
+nav .navbarContainer{
+    height: 80px;
+    display: flex;
+}
+
+div .contenedorLogo{
     margin: 0;
-}
-
-header navbar{
-    width: 100%;
-    height: 100px;
-    background-color: #71131E;
     display: flex;
-    justify-content: space-between;
 }
 
-.DivLogo{
-    height: 100%;
-    width: auto;
+h2{
+    text-align: center;
+    margin-left: 15px;
 }
 
-.LogoHeader{
-    height: 100%;
-    width: auto;
-    /* padding: 15px; */
-    margin: 5px 0 20px 15px;
-}
-
-.DivMenu{
-    width: 35%;
+.contenedorCategorias{
+    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 25px;
+    justify-content: right !important;
 }
 
-.UlMenuHeader{
+.ulNav{
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -38,19 +27,20 @@ header navbar{
     padding: 0;
 }
 
-.LiMenuHeader{
-    font-family: 'Bebas Neue', cursive;
+.liNav{
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
     margin: 0 10px;
-}
-
-a{
-    text-decoration: none;
-    width: auto;
-    height: 100%;
     color: white;
 }
 
-a:hover{
-    color: black;
+.anchorNav{
+    text-decoration: none !important;
+    width: auto;
+    height: 100%;
+    color: white !important;
+}
+
+.anchorNav:hover{
+    color: black !important;
 }

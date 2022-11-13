@@ -1,20 +1,34 @@
 import './navbar.css'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar(){
-    return <header>
-        <navbar>
-            <div className="DivLogo">
-                <img className="LogoHeader" src="https://i.imgur.com/YCVWa6Z.png" alt="Logo Pukem" />
-            </div>
-            <div className="DivMenu">
-                <ul className="UlMenuHeader">
-                    <li className='LiMenuHeader'><a href="#">Home</a></li>
-                    <li className='LiMenuHeader'><a href="#">Tienda</a></li>
-                    <li className='LiMenuHeader'><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </navbar>
-    </header>
+    return (
+        <>
+            <header>
+                <Navbar className='navbarContainer' bg="warning" variant="dark">
+                    <Container className='contenedorLogo'>
+                        <Navbar.Brand href="#home">
+                            <img
+                                alt=""
+                                src="https://i.imgur.com/YCVWa6Z.png"
+                                width="140"
+                                height="45"
+                                className="d-inline-block align-top"
+                            />{' '}
+                        </Navbar.Brand>
+                    </Container>
+                    <Container className='contenedorCategorias'>
+                        <ul className='ulNav'>
+                            <li className='liNav'><a className='anchorNav' href="#">Home</a></li>
+                            <li className='liNav'><a className='anchorNav' href="#">Perritos</a></li>
+                            <li className='liNav'><a className='anchorNav' href="#">Contacto</a></li>
+                        </ul>
+                    </Container>
+                </Navbar>
+            </header>
+        </>
+    )
 }
 
 export default NavBar;

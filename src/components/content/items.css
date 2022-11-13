@@ -1,0 +1,29 @@
+.card{
+    width: 20%;
+    height: auto;
+    padding: 2px;
+    margin: 15px;
+    border: solid #FCC106 1px !important;
+    border-radius: 5px;
+}
+
+.imagenPerritos{
+    width: 100%;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.contentCard{
+    text-align: center;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    width: 50%;
+}
