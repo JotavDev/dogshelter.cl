@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dogshelter.cl/static/css/main.c719852a.css",
+    "main.js": "/dogshelter.cl/static/js/main.682d50e1.js",
+    "static/js/787.e4bec7d6.chunk.js": "/dogshelter.cl/static/js/787.e4bec7d6.chunk.js",
+    "index.html": "/dogshelter.cl/index.html",
+    "main.c719852a.css.map": "/dogshelter.cl/static/css/main.c719852a.css.map",
+    "main.682d50e1.js.map": "/dogshelter.cl/static/js/main.682d50e1.js.map",
+    "787.e4bec7d6.chunk.js.map": "/dogshelter.cl/static/js/787.e4bec7d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c719852a.css",
+    "static/js/main.682d50e1.js"
+  ]
+}
