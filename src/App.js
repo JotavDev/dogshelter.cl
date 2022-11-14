@@ -1,18 +1,20 @@
 import Header from "./components/header/Header";
-import ItemListContainer from "../src/components/content/ItemListContainer"
-import swal from 'sweetalert'
 import CarouselFadeExample from "./components/content/Carousel"
 import Footer from "../src/components/footer/Footer"
 import Aside, { PerrosDiv } from "../src/components/content/Aside"
+import { BrowserRouter , Routes , Route } from "react-router-dom"
 
 function App() {
   return (
     <>
-      <Header/>
-      <CarouselFadeExample/>
-      <PerrosDiv/>
-      <ItemListContainer/>
-      <Footer/>
+      <BrowserRouter>
+        <Header/>
+        <CarouselFadeExample/>
+        <Routes>
+          <Route path="/perritos" element={<PerrosDiv/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </>
   );
 }

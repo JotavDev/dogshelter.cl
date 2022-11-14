@@ -20,9 +20,8 @@ function NavBar(){
                     </Container>
                     <Container className='contenedorCategorias'>
                         <ul className='ulNav'>
-                            <li className='liNav'><a className='anchorNav' href="#">Home</a></li>
-                            <li className='liNav'><a className='anchorNav' href="#">Perritos</a></li>
-                            <li className='liNav'><a className='anchorNav' href="#">Contacto</a></li>
+                            <li className='liNav'><a className='anchorNav' href="/home">Home</a></li>
+                            <li className='liNav'><a className='anchorNav' href="/perritos">Perritos</a></li>
                         </ul>
                     </Container>
                 </Navbar>

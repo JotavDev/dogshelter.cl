@@ -8,11 +8,6 @@ div .contenedorLogo{
     display: flex;
 }
 
-h2{
-    text-align: center;
-    margin-left: 15px;
-}
-
 .contenedorCategorias{
     margin: 0;
     display: flex;
@@ -43,4 +38,44 @@ h2{
 
 .anchorNav:hover{
     color: black !important;
+}
+
+/* Media's*/
+
+@media only screen and (min-width:320px) and (max-width:425px){
+    nav .navbarContainer{
+        height: 50px !important;
+        display: flex;
+    }
+    
+    div .contenedorLogo{
+        margin: 0;
+        display: flex;
+    }
+    
+    .ulNav{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .liNav{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 20px;
+        margin: 0 10px;
+        color: white;
+    }
+    
+    .anchorNav{
+        text-decoration: none !important;
+        width: auto;
+        height: 100%;
+        color: white !important;
+    }
+    
+    .anchorNav:hover{
+        color: black !important;
+    }
 }

@@ -3,13 +3,25 @@
     margin-top: 25px;
 }
 
-.contenedorTitulo{
+.contentContainer{
     width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+div .titleContainer{
     margin-top: 0;
 }
 
-.titleContainer{
+.contenedorTitulo{
     margin-top: 0;
+    height: auto;
+}
+
+.contenedorCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .item-list{
@@ -26,22 +38,65 @@
     margin: 15px 0 5px 15px;
 }
 
-.checkbox{ 
-    cursor: pointer;
-    background-color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-    width: 24px;
-    height: 24px;
-    appearance: none;
-    border: 2px solid #540F17;
-    border-radius: 5px;
-}
-
-.checkbox:checked{
-    background-color: #540F17;
-}
-
 .span{
     margin-left: 10px;
-    color: blue;
+    color: #540F17;
+}
+
+@media only screen and (min-width:320px) and (max-width:905px){
+    .filtrosRazas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .item-list{
+        width: 100%;
+        height: auto;
+        background-color: #fcc106;
+        border: solid 2px #fcc106;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contentContainer{
+        width: 100%;
+        height: auto;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (min-width:906px) and (max-width: 1024px){
+    .filtrosRazas{
+        display: flex;
+        margin-top: 0;
+    }
+    
+    .item-list{
+        width: 30%;
+        height: auto;
+        background-color: #fcc106;
+        border: solid 2px #fcc106;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentContainer{
+        width: 70%;
+        height: auto;
+        margin-top: 35px;
+    }
+
+    .liRazas{
+        list-style: none;
+        margin: 10px;
+        height: 10px;
+    }
 }

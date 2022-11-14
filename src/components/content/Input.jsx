@@ -1,11 +1,17 @@
 import React from "react";
+import "./input.css";
 
-function Input({breed}){
+function Input({breed , handleOnChange , isChecked}){
+
     return (
         <>
         <li className="liRazas">
             <label>
-                <input className="checkbox" type="checkbox"/>{breed}
+                <input 
+                    checked={isChecked} 
+                    onChange={() => handleOnChange()}
+                    className="checkbox" 
+                    type="checkbox"/>{breed}
             </label>
         </li>
         </>
